@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+    int n;
+    int t[100];
+
+    printf("Input the element to store in the array : ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < n ; i++){
+        printf("element - %d: ", i);
+        scanf("%d", &t[i]);
+    }
+    printf("the values store in the array are: ");
+    for (int i = 0 ; i< n ; i++){
+        printf("%d\t", t[i]);
+    }
+    printf("\n");
+    printf("the value reverse in the array are: ");
+    for(int i = n -1 ; i >= 0; i-- ){
+        printf("%d\t", t[i]);
+    }
+    return 0;
+}
